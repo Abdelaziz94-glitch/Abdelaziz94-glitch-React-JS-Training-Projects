@@ -1,23 +1,20 @@
-import logo from './logo.svg';
 import './App.css';
+import InputForm from './inputs';
+import FormInReact from './chatGPTsolution';
+import InputForm2 from './inputsUsingUseReducer';
+
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <h1 style={{color:"green",textTransform:"capitalize",margin:"30px auto"}}>Form appliocation</h1>
+      <h1 style={{color:"green",fontSize:"16px",border:"1px dashed green",textTransform:"capitalize",margin:"30px auto"}}>first solution using the useState hook</h1>
+      <InputForm />
+      <h1 style={{color:"green",fontSize:"16px",border:"1px dashed green",textTransform:"capitalize",margin:"30px auto"}}>second solution using the useReducer hook</h1>
+      <InputForm2 />
+      <h1 style={{color:"green",fontSize:"16px",border:"1px dashed green",textTransform:"capitalize",margin:"30px auto"}}>third solution using the ChatGPT</h1>
+      {/* ChatGPT Solution */}
+      <FormInReact />
     </div>
   );
 }
